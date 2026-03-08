@@ -25,7 +25,7 @@
     mako
 
     mesa
-    glxinfo
+    mesa-demos
     vulkan-loader
     vulkan-tools
     libva-utils
