@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 
 {
-  users.users.Simurgan = {
+  users.users.simurgan = {
     isNormalUser = true;
     description = "Simurgan";
     extraGroups = [
@@ -13,5 +13,5 @@
     initialPassword = "changeme";
   };
 
-  security.sudo.enable = true
+  security.sudo.enable = true;
 }
