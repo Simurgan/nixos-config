@@ -2,19 +2,7 @@
 
 {
   hardware.graphics = {
-    enable = true;
-    enable32Bit = true;
-  };
-
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
-
-  xdg.portal = {
-    enable = true;
-    extraPortals = [
-      pkgs.xdg-desktop-portal-hyprland
-    ];
+    enable = lib.mkDefault true;
+    enable32Bit = lib.mkDefault false;
   };
 }

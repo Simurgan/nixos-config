@@ -12,6 +12,7 @@
     ../../modules/graphics.nix
     ../../modules/audio.nix
     ../../modules/desktop.nix
+    ../../modules/profiles/desktop-hyprland.nix
     ../../modules/fonts.nix
     ../../modules/users.nix
     ../../modules/power.nix
@@ -19,6 +20,9 @@
   ];
 
   networking.hostName = "kaf-vm";
+
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
 
   system.stateVersion = "25.11";
 }
