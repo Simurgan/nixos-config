@@ -2,6 +2,7 @@
 
 {
   services.power-profiles-daemon.enable = true;
+  services.upower.enable = true;
 
   # Do not enable together with power-profiles-daemon.
   # services.tlp.enable = true;

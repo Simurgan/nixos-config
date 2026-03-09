@@ -19,6 +19,7 @@
     ../../modules/packages.nix
   ];
 
+  services.spice-vdagentd.enable = true;
   networking.hostName = "kaf-vm";
 
   boot.loader.systemd-boot.enable = true;
