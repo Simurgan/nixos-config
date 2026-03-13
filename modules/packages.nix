@@ -12,6 +12,10 @@
     pciutils
     usbutils
     lshw
+    gcc
+    gnumake
+    cmake
+    pkg-config
   ];
 
   # Optional later
